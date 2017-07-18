@@ -1,5 +1,7 @@
 ALGORITHME ExoGit
 
+VARIABLE
+	ENTIER : type
 	FONCTION BOOLEEN JeuTypeEntier(ENTIER : VariableEntier)
 		VARIABLE
 		ENTIER i
@@ -19,5 +21,22 @@ ALGORITHME ExoGit
 	FINFONCTION
 
 DEBUT
+Ecrire("Avec quel type souhaitez-vous jouer ?")
+	Ecrire("Entier		: 1
+			Réel		: 2
+			Booleen		: 3
+			Caractère 	: 4
+			Chaine		: 5")
+
+	Lire(type)
+
+	SELON type ALORS
+		1:SaisiTypeEntier()
+		2:SaisiTypeReel()
+		3:SaisiTypeBooleen()
+		4:SaisiTypeCaractere()
+		5:SaisiTypeChaine()
+	FINSELON
 
 FIN
+
