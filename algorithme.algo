@@ -1,0 +1,70 @@
+ALGORITHME algorithme
+
+DEBUT
+
+	FONCTION Saisi_Entier ()
+		VARIABLE
+		ENTIER: Saisi
+
+		DEBUT
+
+		Ecrire ("Choisissez un entier entre 0 et 100:")
+		Lire (Saisi)
+
+		FIN
+		Retourne 1
+	FINFONCTION
+
+	FONCTION Saisi_Reel ()
+		VARIABLE
+		REEL: Saisi
+
+		DEBUT
+
+		Ecrire ("Choisissez un Reel entre -50 et 50:")
+		Lire (Saisi)
+
+		FIN
+		Retourne 2
+	FINFONCTION
+
+	FONCTION Saisi_BOOLEEN ()
+		VARIABLE
+		BOOLEEN: Saisi
+
+		DEBUT
+
+		Ecrire ("Choisissez entre Vrai ou FAUX:")
+		Lire (Saisi)
+
+		FIN
+		Retourne 3
+	FINFONCTION
+
+	FONCTION Saisi_Caractere ()
+		VARIABLE
+		CARACTERE: Saisi
+
+		DEBUT
+
+		Ecrire ("Choisissez un Caractère de l'alphabet")
+		Lire (Saisi)
+
+		FIN
+		Retourne 4
+	FINFONCTION
+
+	FONCTION Saisi_Chaine ()
+		VARIABLE
+		CHAINE: Saisi
+
+		DEBUT
+
+		Ecrire ("Choisissez un mot:")
+		Lire (Saisi)
+
+		FIN
+		Retourne 5
+	FINFONCTION
+
+FIN
