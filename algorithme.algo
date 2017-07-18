@@ -1,0 +1,23 @@
+ALGORITHME ExoGit
+
+	FONCTION BOOLEEN JeuTypeEntier(ENTIER : VariableEntier)
+		VARIABLE
+		ENTIER i
+		 
+		
+		FAIRE
+			Ecrire ("Choisissez un entier entre 0 et 100")
+			Lire (i)
+			SI i<VariableEntier ALORS
+				Ecrire ("C'est plus")
+			FINSI
+			SI i>VariableEntier ALORS
+				Ecrire ("C'est moins")
+			FINSI
+			
+		TANTQUE i != VariableEntier 
+	FINFONCTION
+
+DEBUT
+
+FIN
