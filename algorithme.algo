@@ -13,7 +13,7 @@ DEBUT
 
 	Lire(type)
 
-	SELON TYPE ALORS
+	SELON type ALORS
 		1:SaisiTypeEntier()
 		2:SaisiTypeReel()
 		3:SaisiTypeBooleen()
