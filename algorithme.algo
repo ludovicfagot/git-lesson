@@ -1,0 +1,23 @@
+Algorithme AlgoGIT
+
+VARIABLE
+	ENTIER : type
+
+DEBUT
+	Ecrire("Avec quel type souhaitez-vous jouer ?")
+	Ecrire("Entier		: 1
+			Réel		: 2
+			Booleen		: 3
+			Caractère 	: 4
+			Chaine		: 5")
+
+	Lire(type)
+
+	SELON TYPE ALORS
+		1:SaisiTypeEntier()
+		2:SaisiTypeReel()
+		3:SaisiTypeBooleen()
+		4:SaisiTypeCaractere()
+		5:SaisiTypeChaine()
+	
+FIN
