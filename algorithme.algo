@@ -19,5 +19,6 @@ DEBUT
 		3:SaisiTypeBooleen()
 		4:SaisiTypeCaractere()
 		5:SaisiTypeChaine()
+	FINSELON
 	
 FIN
