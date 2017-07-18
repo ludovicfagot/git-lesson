@@ -23,8 +23,7 @@ ENTIER : type
 		DEBUT
 
 		Ecrire ("Choisissez un Reel entre -50 et 50:")
-		Lire (Saisi)
-
+		
 		FIN
 		Retourne 2
 	FINFONCTION
@@ -74,7 +73,6 @@ ENTIER : type
 		 
 		
 		FAIRE
-			Ecrire ("Choisissez un entier entre 0 et 100")
 			Lire (i)
 			SI i<VariableEntier ALORS
 				Ecrire ("C'est plus")
@@ -84,8 +82,24 @@ ENTIER : type
 			FINSI
 			
 		TANTQUE i != VariableEntier 
+		retourne vrai
 	FINFONCTION
-
+	
+	FONCTION BOOLEEN JeuTypeReel(REEL : VariableReel)
+		VARIABLE
+		REEL i
+		FAIRE
+			Lire (i)
+			SI i<VariableReel ALORS
+				Ecrire ("C'est plus")
+			FINSI
+			SI i>VariableReel ALORS
+				Ecrire ("C'est moins")
+			FINSI
+			
+		TANTQUE i != VariableReel 
+		retourne vrai
+	FINFONCTION
 DEBUT
 Ecrire("Avec quel type souhaitez-vous jouer ?")
 	Ecrire("Entier		: 1
