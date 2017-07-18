@@ -1,6 +1,7 @@
 ALGORITHME algorithme
 
-DEBUT
+VARIABLE
+ENTIER : type
 
 	FONCTION Saisi_Entier ()
 		VARIABLE
@@ -66,5 +67,41 @@ DEBUT
 		FIN
 		Retourne 5
 	FINFONCTION
+
+	FONCTION BOOLEEN JeuTypeEntier(ENTIER : VariableEntier)
+		VARIABLE
+		ENTIER i
+		 
+		
+		FAIRE
+			Ecrire ("Choisissez un entier entre 0 et 100")
+			Lire (i)
+			SI i<VariableEntier ALORS
+				Ecrire ("C'est plus")
+			FINSI
+			SI i>VariableEntier ALORS
+				Ecrire ("C'est moins")
+			FINSI
+			
+		TANTQUE i != VariableEntier 
+	FINFONCTION
+
+DEBUT
+Ecrire("Avec quel type souhaitez-vous jouer ?")
+	Ecrire("Entier		: 1
+			Réel		: 2
+			Booleen		: 3
+			Caractère 	: 4
+			Chaine		: 5")
+
+	Lire(type)
+
+	SELON type ALORS
+		1:Saisi_Entier()
+		2:Saisi_Reel()
+		3:Saisi_Booleen()
+		4:Saisi_Caractere()
+		5:Saisi_Chaine()
+	FINSELON
 
 FIN
