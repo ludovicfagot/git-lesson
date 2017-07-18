@@ -10,7 +10,7 @@ ENTIER : type
 		DEBUT
 
 		Ecrire ("Choisissez un entier entre 0 et 100:")
-		Lire (Saisi)
+		JeuTypeEntier(Lire (Saisi))
 
 		FIN
 		Retourne 1
@@ -23,7 +23,7 @@ ENTIER : type
 		DEBUT
 
 		Ecrire ("Choisissez un Reel entre -50 et 50:")
-		Lire (Saisi)
+		JeuTypeReel (Lire (Saisi))
 
 		FIN
 		Retourne 2
@@ -36,7 +36,7 @@ ENTIER : type
 		DEBUT
 
 		Ecrire ("Choisissez entre Vrai ou FAUX:")
-		Lire (Saisi)
+		JeuTypeBooleen (Lire (Saisi))
 
 		FIN
 		Retourne 3
@@ -49,7 +49,7 @@ ENTIER : type
 		DEBUT
 
 		Ecrire ("Choisissez un Caractère de l'alphabet")
-		Lire (Saisi)
+		JeuTypeCaractere (Lire (Saisi))
 
 		FIN
 		Retourne 4
@@ -62,7 +62,7 @@ ENTIER : type
 		DEBUT
 
 		Ecrire ("Choisissez un mot:")
-		Lire (Saisi)
+		JeuTypeChaine (Lire (Saisi))
 
 		FIN
 		Retourne 5
@@ -74,7 +74,6 @@ ENTIER : type
 		 
 		
 		FAIRE
-			Ecrire ("Choisissez un entier entre 0 et 100")
 			Lire (i)
 			SI i<VariableEntier ALORS
 				Ecrire ("C'est plus")
