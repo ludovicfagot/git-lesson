@@ -23,8 +23,20 @@ ENTIER : type
 		DEBUT
 
 		Ecrire ("Choisissez un Reel entre -50 et 50:")
+<<<<<<< HEAD
 		JeuTypeReel (Lire (Saisi))
 
+=======
+		
+>>>>>>> 1193983b0b644f0a46dfd640a04bdcb851219710
+Jaouen@Jaouen-VAIO MINGW64 ~/Documents/POEC/Projet/git-lesson (master|MERGING)
+$ git pull
+error: You have not concluded your merge (MERGE_HEAD exists).
+hint: Please, commit your changes before merging.
+fatal: Exiting because of unfinished merge.
+
+Jaouen@Jaouen-VAIO MINGW64 ~/Documents/POEC/Projet/git-lesson (master|MERGING)
+$ git checkout master
 		FIN
 		Retourne 2
 	FINFONCTION
@@ -83,8 +95,24 @@ ENTIER : type
 			FINSI
 			
 		TANTQUE i != VariableEntier 
+		retourne vrai
 	FINFONCTION
-
+	
+	FONCTION BOOLEEN JeuTypeReel(REEL : VariableReel)
+		VARIABLE
+		REEL i
+		FAIRE
+			Lire (i)
+			SI i<VariableReel ALORS
+				Ecrire ("C'est plus")
+			FINSI
+			SI i>VariableReel ALORS
+				Ecrire ("C'est moins")
+			FINSI
+			
+		TANTQUE i != VariableReel 
+		retourne vrai
+	FINFONCTION
 DEBUT
 Ecrire("Avec quel type souhaitez-vous jouer ?")
 	Ecrire("Entier		: 1
