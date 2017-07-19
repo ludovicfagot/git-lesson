@@ -1,5 +1,5 @@
-ALGORITHME algorithme
-  czleh gùohze hpizr
+ALGORITHME algorithmedsdsds
+  
 VARIABLE
 ENTIER : type
 
@@ -23,20 +23,10 @@ ENTIER : type
 		DEBUT
 
 		Ecrire ("Choisissez un Reel entre -50 et 50:")
-<<<<<<< HEAD
+
 		JeuTypeReel (Lire (Saisi))
 
-=======
-		
->>>>>>> 1193983b0b644f0a46dfd640a04bdcb851219710
-Jaouen@Jaouen-VAIO MINGW64 ~/Documents/POEC/Projet/git-lesson (master|MERGING)
-$ git pull
-error: You have not concluded your merge (MERGE_HEAD exists).
-hint: Please, commit your changes before merging.
-fatal: Exiting because of unfinished merge.
 
-Jaouen@Jaouen-VAIO MINGW64 ~/Documents/POEC/Projet/git-lesson (master|MERGING)
-$ git checkout master
 		FIN
 		Retourne 2
 	FINFONCTION
